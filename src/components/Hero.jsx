@@ -4,6 +4,8 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
+import profileImg from '../assets/profile.jpg';
+
 const Hero = () => {
   return (
     <section id="home" className="hero section container">
@@ -87,17 +89,11 @@ const Hero = () => {
         >
           <div className="hero-profile-card glass">
             <div className="profile-img-box">
-              <svg className="avatar-placeholder" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="96" fill="url(#avatar-grad)" stroke="rgba(124, 58, 237, 0.4)" strokeWidth="4"/>
-                <path d="M100 50C77.9086 50 60 67.9086 60 90C60 112.091 77.9086 130 100 130C122.091 130 140 112.091 140 90C140 67.9086 122.091 50 100 50Z" fill="#38bdf8" opacity="0.8"/>
-                <path d="M40 175C40 144.624 66.8629 120 100 120C133.137 120 160 144.624 160 175H40Z" fill="#7c3aed" opacity="0.9"/>
-                <defs>
-                  <linearGradient id="avatar-grad" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#1e1b4b"/>
-                    <stop offset="1" stopColor="#0f172a"/>
-                  </linearGradient>
-                </defs>
-              </svg>
+              <img 
+                src={profileImg} 
+                alt="Chaitanya Geddanapalli" 
+                className="profile-avatar-img" 
+              />
             </div>
             <div className="profile-info-badge">
               <span className="info-title">SRM University</span>
